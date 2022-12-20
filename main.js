@@ -1,1 +1,1 @@
-console.log("Test");
+(()=>{"use strict";(e=>{const t=document.createElement("header"),n=document.createElement("h1"),d=document.createElement("nav"),c=document.createElement("ul"),l=document.createElement("li"),o=document.createElement("li"),a=document.createElement("li");n.textContent="The Cooked",l.textContent="Home",o.textContent="Menus",a.textContent="Contact",c.appendChild(l),c.appendChild(o),c.appendChild(a),d.appendChild(c),t.appendChild(n),t.appendChild(d),e.appendChild(t)})(document.querySelector("#content"))})();
