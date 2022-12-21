@@ -10,8 +10,10 @@ const elements = (() => {
   const main = () => {
     return document.createElement(`main`);
   };
-  const div = () => {
-    return document.createElement(`div`);
+  const div = (cl) => {
+    const div1 = document.createElement(`div`);
+    div1.classList.add(cl);
+    return div1;
   };
   const header = () => {
     return document.createElement(`header`);
@@ -50,11 +52,12 @@ const elements = (() => {
     b.textContent = a;
     return b;
   };
-  const link = (href) => {
+  const link = (href, cont) => {
     const link1 = document.createElement(`a`);
     let a = document.createAttribute(`href`);
     a.value = href;
     link1.setAttributeNode(a);
+    link1.textContent = cont;
     return link1;
   };
   const span = (a) => {
