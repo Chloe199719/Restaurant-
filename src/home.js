@@ -1,7 +1,8 @@
 import elements from "./create";
 
+let main;
 const Home = (hook) => {
-  const main = elements.main();
+  main = elements.main();
   const section1 = elements.section();
   const div1 = elements.div(`author`);
   const section2 = elements.section();
@@ -46,4 +47,8 @@ const Home = (hook) => {
   hook.appendChild(main);
 };
 
-export default Home;
+const event = function () {
+  return main;
+};
+
+export { Home, event };
