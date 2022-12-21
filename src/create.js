@@ -52,6 +52,11 @@ const elements = (() => {
     b.textContent = a;
     return b;
   };
+  const h3 = (a) => {
+    const b = document.createElement(`h3`);
+    b.textContent = a;
+    return b;
+  };
   const link = (href, cont) => {
     const link1 = document.createElement(`a`);
     let a = document.createAttribute(`href`);
@@ -79,6 +84,7 @@ const elements = (() => {
     h2,
     link,
     span,
+    h3,
   };
 })();
 
