@@ -1,15 +1,25 @@
-const Home = (() => {
-  const main = document.createElement(`main`);
-  const section1 = (hook) => {
-    const section1 = document.createElement(`section`);
-    const h21 = document.createElement(`h2`);
-    const pe11 = document.createElement(`p`);
-    const pe12 = document.createElement(`p`);
-    const img1 = document.createElement(`img`);
-  };
-  const section2 = () => {
-    const section2 = document.createElement(`section`);
-    const h22 = document.createElement(`h2`);
-    const p = document.createElement(`p`);
-  };
-})();
+import elements from "./create";
+
+const Home = (hook) => {
+  const main = elements.main();
+  const section1 = elements.section();
+  section1.appendChild(elements.h2(`Who are we?`));
+  section1.appendChild(
+    elements.paragraph(`Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+    cum? Repellat rerum dolor vitae, tempora qui eos. Eius, asperiores.
+    Repudiandae ullam error omnis voluptas quam natus, reprehenderit
+    expedita recusandae qui.`)
+  );
+  section1.appendChild(
+    elements.paragraph(`Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+    cum? Repellat rerum dolor vitae, tempora qui eos. Eius, asperiores.
+    Repudiandae ullam error omnis voluptas quam natus, reprehenderit
+    expedita recusandae qui.`)
+  );
+  section1.appendChild(elements.img(`img2.jpg`, "Pizza Picture", "500px"));
+
+  main.appendChild(section1);
+  hook.appendChild(main);
+};
+
+export default Home;
