@@ -1,4 +1,5 @@
 import elements from "./create";
+import img1 from "./img2.jpg";
 
 let main;
 const Home = (hook) => {
@@ -19,7 +20,9 @@ const Home = (hook) => {
     Repudiandae ullam error omnis voluptas quam natus, reprehenderit
     expedita recusandae qui.`)
   );
-  section1.appendChild(elements.img(`img2.jpg`, "Pizza Picture", "500px"));
+  //   const myimg = new Image(500);
+  //   myimg.src = img1;
+  section1.appendChild(elements.img(img1, "test", "500px"));
   section1.appendChild(div1);
   div1.appendChild(elements.span(`Photo By `));
   div1.appendChild(

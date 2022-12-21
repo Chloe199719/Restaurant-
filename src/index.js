@@ -1,6 +1,7 @@
 import header from "./header";
 import elements from "./create";
 import { Home, event } from "./Home";
+import "./style.css";
 const content = document.querySelector(`#content`);
 header(content);
 const test = document.querySelector(`h1`);
