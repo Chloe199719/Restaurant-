@@ -34,13 +34,13 @@ nav {
   border-radius: 50px;
   padding: 10px 40px;
 }
-ul {
+nav ul {
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
 }
 
-ul li {
+nav ul li {
   padding: 0 20px;
   list-style-type: none;
   font-size: 2em;
