@@ -15,6 +15,7 @@ body {
   background: #222831;
   /* min-height: 100vh; */
   font-family: "Roboto Mono", monospace;
+  color: #f2f2f2;
 }
 header {
   display: flex;
@@ -25,10 +26,11 @@ header {
 }
 h1 {
   font-size: 4em;
+  color: #f2f2f2;
 }
 
 nav {
-  border: 2px black solid;
+  border: 2px #f2f2f2 solid;
   display: flex;
   align-items: center;
   border-radius: 50px;
@@ -51,7 +53,7 @@ nav ul li {
 }
 nav ul li:hover {
   transform: scale(1.12);
-  color: white;
+  color: #2dd4bf;
 }
 
 nav ul li:active {
@@ -76,18 +78,19 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(249, 109, 0, 0.8);
+  background-color: rgba(249, 109, 0, 0.6);
 }
 h2 {
   text-align: center;
   padding: 30px 20px;
-  font-size: 2em;
+  font-size: 3em;
 }
 section p {
   text-align: center;
   padding: 0 100px 20px 100px;
   margin-bottom: 20px;
   font-size: 20px;
+  color: #f2f2f2;
 }
 
 .wrapper {

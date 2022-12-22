@@ -65,10 +65,19 @@ const elements = (() => {
     link1.textContent = cont;
     return link1;
   };
-  const span = (a) => {
+  const span = (a, b) => {
     const span1 = document.createElement(`span`);
     span1.textContent = a;
+    span1.setAttribute(`id`, b);
     return span1;
+  };
+  const footer = () => {
+    return document.createElement(`footer`);
+  };
+  const button = (a) => {
+    let button1 = document.createElement(`button`);
+    button1.classList.add(a);
+    return button1;
   };
   return {
     paragraph,
@@ -85,6 +94,8 @@ const elements = (() => {
     link,
     span,
     h3,
+    footer,
+    button,
   };
 })();
 

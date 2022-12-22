@@ -3,8 +3,10 @@ import { Home } from "./Home";
 import menu from "./menu";
 import "./style.css";
 import contact from "./contact";
+import footer from "./footer";
 
 const content = document.querySelector(`#content`);
+const body = document.querySelector(`body`);
 
 header(content);
 const homebtn = document.querySelector(`.home`);
@@ -29,4 +31,5 @@ contactbtn.addEventListener(`click`, function (e) {
 });
 
 Home(content);
+footer(body);
 // Home(content);
