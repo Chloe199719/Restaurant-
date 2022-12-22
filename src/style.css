@@ -95,3 +95,19 @@ footer button {
   border: none;
   border-radius: 50%;
 }
+
+.menu1 ul,
+.menu2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu1 ul li,
+.menu2 ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

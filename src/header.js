@@ -4,10 +4,16 @@ const header = (hook) => {
   const ul = elements.ul();
   header.appendChild(elements.h1(`The Cooked`));
   header.appendChild(elements.nav()).appendChild(ul);
-  ul.appendChild(elements.li(`Home`));
-  ul.appendChild(elements.li(`Menus`));
-  ul.appendChild(elements.li(`Contact`));
+
   hook.appendChild(header);
+  const contanct = elements.li(`Contact`);
+  contanct.classList.add(`contact`);
+  const Menus = elements.li(`Menus`);
+  Menus.classList.add(`menus`);
+  const Home = elements.li(`Home`);
+  Home.classList.add(`home`);
+
+  ul.append(Home, Menus, contanct);
   //   const firstElement = (hook) => {
   //     const header = document.createElement(`header`);
   //     const h1 = document.createElement(`h1`);

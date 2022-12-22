@@ -5,13 +5,20 @@ import img3 from "./img4.jpg";
 import img4 from "./img5.jpg";
 import img5 from "./img6.jpg";
 import img6 from "./img7.jpg";
+import img7 from "./img8.jpg";
+import img8 from "./img9.jpg";
+import img9 from "./img10.jpg";
+import img10 from "./img11.jpg";
 
 const menu = (hook) => {
   const main = elements.main();
   hook.appendChild(main);
   const section1 = elements.section();
   const section2 = elements.section();
+  section1.classList.add(`menu1`);
+  section2.classList.add(`menu2`);
   main.appendChild(section1);
+  main.appendChild(section2);
   const ul = elements.ul();
   section1.appendChild(elements.h2(`Pizzas`));
   section1.appendChild(ul);
@@ -52,6 +59,33 @@ const menu = (hook) => {
     elements.img(img6, "test", "200px"),
     elements.h3(`Mushrooms`),
     elements.paragraph(`Some Descrition`)
+  );
+  const ul2 = elements.ul();
+  section2.append(elements.h2(`Drinks`), ul2);
+
+  const li21 = elements.li();
+  const li22 = elements.li();
+  const li23 = elements.li();
+  const li24 = elements.li();
+  ul2.append(li21, li22, li23, li24);
+  li21.append(
+    elements.img(img7, `test`, `200px`),
+    elements.h3(`Coca Cola`),
+    elements.paragraph(`Some description`)
+  );
+  li22.append(
+    elements.img(img8, `test`, `200px`),
+    elements.h3(`Pepsi`),
+    elements.paragraph(`Some description`)
+  );
+  li23.append(
+    elements.img(img9, `test`, `200px`),
+    elements.h3(`Beer`),
+    elements.paragraph(`Some description`)
+  );
+  li24.append(
+    elements.img(img10, `test`, `200px`),
+    elements.paragraph(`Some description`)
   );
 };
 
