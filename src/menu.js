@@ -85,6 +85,7 @@ const menu = (hook) => {
   );
   li24.append(
     elements.img(img10, `test`, `200px`),
+    elements.h3(`Monster`),
     elements.paragraph(`Some description`)
   );
 };

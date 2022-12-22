@@ -41,10 +41,23 @@ nav ul {
 }
 
 nav ul li {
-  padding: 0 20px;
+  padding: 0 40px;
+  margin: 0 2px;
   list-style-type: none;
   font-size: 2em;
+  /* border: 1px white solid;
+  border-radius: 20px; */
+  transition: 200ms ease-in-out;
 }
+nav ul li:hover {
+  transform: scale(1.12);
+  color: white;
+}
+
+nav ul li:active {
+  transform: scale(0.99) translate(0px, -2px);
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -74,6 +87,7 @@ section p {
   text-align: center;
   padding: 0 100px 20px 100px;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .wrapper {
@@ -110,4 +124,10 @@ footer button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.menu1 ul li img,
+.menu1 ul li h3,
+.menu2 ul li img,
+.menu2 ul li h3 {
+  margin: 10px;
 }
