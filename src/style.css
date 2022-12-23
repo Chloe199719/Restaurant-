@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
   scroll-behavior: smooth;
 }
 body {
@@ -54,6 +53,7 @@ nav ul li {
 nav ul li:hover {
   transform: scale(1.12);
   color: #2dd4bf;
+  cursor: pointer;
 }
 
 nav ul li:active {
